@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HP Commercial Notebook Pricelist</title>
+<meta name="description" content="Iontech HP Commercial Notebook (BNB) pricelist for dealers and resellers: specifications, distributor price, SRP and stock availability.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="icon" type="image/png" href="assets/img/brand/hp-logo-64.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#products">Skip to products</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#home" aria-label="HP Commercial Notebook Pricelist home">
+      <img class="logo logo-lg" src="assets/img/brand/hp-logo.png" alt="HP" width="44" height="44">
+      <span class="brand-text">
+        <strong>HP Commercial Notebook Pricelist</strong>
+        <small>Business Notebook Solutions for Your Enterprise Needs</small>
+      </span>
+    </a>
+    <form class="header-search" role="search" id="headerSearchForm">
+      <label class="sr-only" for="q">Search products</label>
+      <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="Search model, processor, part number..." autocomplete="off" enterkeyhint="search">
+    </form>
+    <button class="icon-btn" id="searchBtn" type="button" aria-label="Search products">
+      <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+      <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <nav class="main-nav" id="mainNav" aria-label="Main">
+    <div class="wrap nav-row">
+      <a href="#home">Home</a>
+      <a href="#categories">Products</a>
+      <a href="#products" data-view="table">Pricelist</a>
+      <a href="#promotions">Promotions</a>
+      <a href="#contact">Contact Us</a>
+      <span class="nav-meta" id="navMeta"></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-logos"><img class="logo logo-sm" src="assets/img/brand/hp-logo.png" alt="HP" width="28" height="28"><img class="logo logo-sm" src="assets/img/brand/iontech-logo.png" alt="Iontech" width="28" height="28"><span>Iontech · Authorized HP Distributor</span></p>
+        <h1>HP Commercial Notebooks</h1>
+        <p class="lede">Reliable business computing designed for modern work.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products" data-view="table">View Pricelist</a>
+          <a class="btn btn-ghost" href="#promotions">Current promotions</a>
+        </div>
+        <dl class="hero-stats" id="heroStats"></dl>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-img hero-img-a" src="assets/img/products/DU6U1AT_2-FrontRight.webp" alt="" width="1200" height="900" fetchpriority="high">
+        <img class="hero-img hero-img-b" src="assets/img/products/DR6B7AT_3-FrontLeft.webp" alt="" width="1200" height="900">
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories" aria-labelledby="catTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="catTitle">Product categories</h2>
+        <p>Choose a series to filter the pricelist.</p>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / PRICELIST -->
+  <section class="section section-alt" id="products" aria-labelledby="prodTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="prodTitle">Pricelist</h2>
+        <p class="disclaimer" id="disclaimerTop"></p>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar-search">
+          <svg class="ico" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <label class="sr-only" for="q2">Search products</label>
+          <input id="q2" type="search" placeholder="Search model, processor, part number..." autocomplete="off">
+        </div>
+        <button class="btn btn-quiet filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filters">Filters <span class="count-badge" id="filterCount" hidden></span></button>
+        <div class="toolbar-right">
+          <label class="sr-only" for="sort">Sort</label>
+          <select id="sort">
+            <option value="featured">Sort: In stock first</option>
+            <option value="dp-asc">DP: low to high</option>
+            <option value="dp-desc">DP: high to low</option>
+            <option value="name">Model: A–Z</option>
+            <option value="stock">On hand: most first</option>
+          </select>
+          <div class="seg" role="group" aria-label="View">
+            <button type="button" id="viewGrid" aria-pressed="true">Grid</button>
+            <button type="button" id="viewTable" aria-pressed="false">Pricelist</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <div class="filter-row">
+          <span class="filter-label" id="lblFamily">Product family</span>
+          <div class="chips" id="fCategory" role="group" aria-labelledby="lblFamily"></div>
+        </div>
+        <div class="filter-grid">
+          <div class="field"><label for="fProc">Processor</label><select id="fProc"></select></div>
+          <div class="field"><label for="fRam">RAM</label><select id="fRam"></select></div>
+          <div class="field"><label for="fSto">Storage</label><select id="fSto"></select></div>
+          <div class="field"><label for="fScreen">Screen size</label><select id="fScreen"></select></div>
+          <div class="field"><label for="fPrice">Price range (DP)</label><select id="fPrice"></select></div>
+          <div class="field"><label for="fStock">Availability</label>
+            <select id="fStock">
+              <option value="all">All</option>
+              <option value="in">In stock</option>
+              <option value="order">Order basis</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-foot">
+          <span class="result-count" id="resultCount" aria-live="polite"></span>
+          <button type="button" class="link-btn" id="clearFilters">Clear all filters</button>
+        </div>
+      </div>
+
+      <div id="gridView" class="product-grid"></div>
+      <div id="tableView" class="table-wrap" hidden>
+        <table class="pricelist" id="priceTable">
+          <thead>
+            <tr>
+              <th scope="col"><span class="cmp-head">Compare</span></th>
+              <th scope="col"><button type="button" data-sort="name">Model</button></th>
+              <th scope="col"><button type="button" data-sort="pn">Part Number</button></th>
+              <th scope="col"><button type="button" data-sort="processor">Processor</button></th>
+              <th scope="col"><button type="button" data-sort="ramN">RAM</button></th>
+              <th scope="col"><button type="button" data-sort="stoN">Storage</button></th>
+              <th scope="col"><button type="button" data-sort="screenN">Display</button></th>
+              <th scope="col" class="num"><button type="button" data-sort="dp">DP</button></th>
+              <th scope="col" class="num"><button type="button" data-sort="srp">SRP</button></th>
+              <th scope="col" class="num"><button type="button" data-sort="onHand">On Hand</button></th>
+              <th scope="col"><button type="button" data-sort="status">Status</button></th>
+              <th scope="col"><span>Inquiry</span></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="emptyState" hidden>No products match your search. <button type="button" class="link-btn" id="emptyClear">Clear filters</button></p>
+      <p class="disclaimer disclaimer-bottom" id="disclaimerBottom"></p>
+    </div>
+  </section>
+
+  <!-- PROMOTIONS -->
+  <section class="section" id="promotions" aria-labelledby="promoTitle">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="promoTitle">Promotions</h2>
+        <p>Current HP BNB programs available through Iontech.</p>
+      </div>
+      <div class="promo-list" id="promoList"></div>
+    </div>
+  </section>
+
+  <!-- INQUIRY -->
+  <section class="section section-alt" id="contact" aria-labelledby="rfqTitle">
+    <div class="wrap rfq-grid">
+      <div class="rfq-intro">
+        <h2 id="rfqTitle">Request for Quotation</h2>
+        <p>Send us the model and quantity you need. Our sales team will reply with the latest price and availability.</p>
+        <div class="contact-card" id="contactCard"></div>
+      </div>
+      <form class="rfq-form" id="rfqForm" novalidate>
+        <div class="field"><label for="rfCompany">Company Name <span class="req">*</span></label><input id="rfCompany" name="company" required autocomplete="organization"></div>
+        <div class="field"><label for="rfPerson">Contact Person <span class="req">*</span></label><input id="rfPerson" name="person" required autocomplete="name"></div>
+        <div class="field"><label for="rfEmail">Email <span class="req">*</span></label><input id="rfEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="rfMobile">Mobile Number <span class="req">*</span></label><input id="rfMobile" name="mobile" type="tel" required autocomplete="tel" placeholder="09XX XXX XXXX"></div>
+        <div class="field span2"><label for="rfProduct">Product / Part Number <span class="req">*</span></label><input id="rfProduct" name="product" required list="productList" placeholder="e.g. HP EliteBook 640 G11 – BD8B3PT"><datalist id="productList"></datalist></div>
+        <div class="field"><label for="rfQty">Quantity <span class="req">*</span></label><input id="rfQty" name="qty" type="number" min="1" step="1" required inputmode="numeric"></div>
+        <div class="field span2"><label for="rfMsg">Message</label><textarea id="rfMsg" name="message" rows="4" placeholder="Delivery location, target date, Care Pack or other requirements"></textarea></div>
+        <div class="form-actions span2">
+          <button class="btn btn-primary" type="submit">Request Quotation</button>
+          <p class="form-note">Opens your email app with the inquiry addressed to our sales team.</p>
+        </div>
+        <div class="form-result span2" id="rfqResult" hidden></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="foot-logos"><img class="logo logo-md" src="assets/img/brand/hp-logo.png" alt="HP" width="40" height="40"><span class="logo-sep" aria-hidden="true"></span><img class="logo logo-md" src="assets/img/brand/iontech-logo.png" alt="Iontech" width="40" height="40"></p>
+      <p class="foot-brand">HP Commercial Notebook Pricelist</p>
+      <p class="muted">Business notebooks from Iontech, authorized HP distributor.</p>
+    </div>
+    <div>
+      <h3>Distributor</h3>
+      <address id="footAddress"></address>
+    </div>
+    <div>
+      <h3>Sales contact</h3>
+      <ul class="plain" id="footContact"></ul>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul class="plain">
+        <li><a href="#products" data-view="table">Pricelist</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+        <li><a href="#categories">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p id="footDisclaimer"></p>
+    <p>© <span id="year"></span> Iontech Enterprise, Inc. HP and the HP logo are trademarks of HP Inc. Product images courtesy of HP.</p>
+  </div>
+</footer>
+
+<!-- Compare bar -->
+<div class="compare-bar" id="compareBar" hidden>
+  <div class="wrap compare-row">
+    <span id="compareText"></span>
+    <div class="compare-actions">
+      <button type="button" class="link-btn" id="compareClear">Clear</button>
+      <button type="button" class="btn btn-primary btn-sm" id="compareOpen">Compare</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile sticky inquire -->
+<a class="sticky-inquire" id="stickyInquire" href="#contact">Inquire Now</a>
+
+<!-- Modals -->
+<div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel modal-lg" tabindex="-1">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <div id="detailBody"></div>
+  </div>
+</div>
+<div class="modal" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="cTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel modal-xl" tabindex="-1">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <h2 id="cTitle">Compare notebooks</h2>
+    <div class="table-wrap" id="compareBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="data/site.js"></script>
+<script src="data/products.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
