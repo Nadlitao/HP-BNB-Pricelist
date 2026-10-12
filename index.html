@@ -5736,7 +5736,7 @@ window.CAREPACKS = {"source":"HP Care Pack Central 2.0 (cpc2.ext.hp.com), countr
       .concat(Q.d.contact ? [["CONTACT NO.", Q.d.contact]] : []).concat(Q.d.email ? [["EMAIL", Q.d.email]] : []).concat(Q.d.address ? [["ADDRESS", Q.d.address]] : []);
     var terms = [["Availability", termVal("availability", t)], ["Warranty", termVal("warranty", t)], ["Price validity", Q.t.validity], ["Payment Terms", Q.t.payment], ["Note", Q.t.notes]];
     preview.innerHTML =
-      '<div class="pv-page"><div class="pv-head"><img src="' + logo("iontech") + '" alt="Iontech"><span class="pv-co">IONTECH ENTERPRISE, INC.</span><img class="pv-hp" src="' + logo("hp") + '" alt="HP"></div><div class="pv-rule"></div>' +
+      '<div class="pv-page"><div class="pv-head"><img src="' + logo("iontech") + '" alt="Iontech"><span class="pv-co">IONTECH INC.</span><img class="pv-hp" src="' + logo("hp") + '" alt="HP"></div><div class="pv-rule"></div>' +
       '<table class="pv-info">' + info.map(function (r) { return '<tr><th>' + r[0] + '</th><td>: ' + esc(r[1] || "") + '</td></tr>'; }).join("") + '</table>' +
       '<p class="pv-intro">We are pleased to present our proposal for the following product(s) subject to the terms and conditions set forth hereunder:</p>' +
       '<table class="pv-tbl"><thead><tr><th>QTY</th><th>ITEM CODE</th><th>SPECIFICATION</th><th>UNIT PRICE</th><th>TOTAL PRICE</th></tr></thead><tbody>' + (rows || '<tr><td colspan="5" class="c muted">No items yet</td></tr>') + '</tbody><tfoot>' +
@@ -5865,7 +5865,7 @@ window.CAREPACKS = {"source":"HP Care Pack Central 2.0 (cpc2.ext.hp.com), countr
     // header
     function header() {
       if (ionLogo) doc.addImage(ionLogo, "PNG", L, 9, 15, 15);
-      doc.setFont("helvetica", "bold"); doc.setFontSize(13); doc.setTextColor(30, 30, 30); doc.text("IONTECH ENTERPRISE, INC.", L + 18, 18.5);
+      doc.setFont("helvetica", "bold"); doc.setFontSize(13); doc.setTextColor(30, 30, 30); doc.text("IONTECH INC.", L + 18, 18.5);
       if (hpLogo) doc.addImage(hpLogo, "PNG", R - 14, 9, 14, 14);
       doc.setDrawColor(BLUE[0], BLUE[1], BLUE[2]); doc.setLineWidth(1.4); doc.line(L, 27.5, R, 27.5);
       doc.setDrawColor(0); doc.setTextColor(0);
